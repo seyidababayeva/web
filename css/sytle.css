@@ -66,3 +66,52 @@ footer {
   margin-top: 40px;
   font-size: 14px;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+header {
+  background-color: #4c6793;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+.memleket h2 {
+  color: #4c6793;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0e0e0;
+  margin-top: 2rem;
+}
