@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Sayfası</title>
+  <script>
+    function validateForm() {
+      var email = document.forms["loginForm"]["email"].value;
+      var sifre = document.forms["loginForm"]["sifre"].value;
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (email == "" || sifre == "") {
+        alert("Kullanıcı adı ve şifre boş bırakılamaz.");
+        return false;
+      }
+      if (!emailRegex.test(email)) {
+        alert("Geçerli bir e-posta adresi giriniz.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h2>Giriş Yap</h2>
+  <form name="loginForm" action="kontrol.php" method="post" onsubmit="return validateForm()">
+    <label for="email">Kullanıcı Adı (Mail):</label><br>
+    <input type="text" id="email" name="email"><br><br>
+    
+    <label for="sifre">Şifre:</label><br>
+    <input type="password" id="sifre" name="sifre"><br><br>
+    
+    <input type="submit" value="Giriş Yap">
+  </form>
+</body>
+</html>
