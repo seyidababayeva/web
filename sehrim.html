@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Şehrim</title>
-  <link rel="stylesheet" href="sytle.css" />
+  <meta charset="UTF-8">
+  <title>Şehrim - Bakü</title>
+  <link rel="stylesheet" href="css/sytle.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      margin: 20px auto;
+      width: 95%;
+    }
+    .slider a {
+      margin: 0 10px;
+      flex: 0 0 auto;
+    }
+    .slider img {
+      height: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .slider img:hover {
+      transform: scale(1.05);
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Şehrim</h1>
+    <h1>Bakü - Azerbaycan</h1>
+  </header>
+  <header>
     <nav>
-      <a href="index.html">Anasayfa</a>
-      <a href="sehrim.html" class="active">Şehrim</a>
-      <!-- Diğer sayfa linkleri buraya gelecek -->
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="hakkimda.html">Hakkımda</a></li>
+        <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+        <li><a href="sehrim.html">Şehrim</a></li>
+        <li><a href="takim.html">Takım</a></li>
+        <li><a href="ilgi_alanlari.html">İlgi Alanları</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="login.html">Giriş</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="memleket">
-      <h2>Sakarya – Serdivan</h2>
-      <p>Sakarya, Marmara Bölgesi’nde yer alan bir doğa şehridir. Serdivan ise öğrenci nüfusu yoğun, modern ve samimi bir ilçedir. Hem şehir hayatı hem doğa iç içedir burada.</p>
+  <div class="slider">
+    <a href="haydar.html"><img src="img/haydar_aliyev.jpg" alt="Haydar Aliyev Merkezi"></a>
+    <a href="kizkulesi.html"><img src="img/kiz_kulesi.jpg" alt="Kız Kulesi"></a>
+    <a href="oldcity.html"><img src="img/old_city.jpg" alt="İçərişəhər"></a>
+    <a href="sehidler.html"><img src="img/sehidler_xiyabani.jpg" alt="Şehitler Hiyabanı"></a>
+  </div>
 
-      <h3>Şehre Dair Güzellikler</h3>
-      <ul>
-        <li>Taraklı’nın tarihi evleri</li>
-        <li>Sapanca Gölü ve yürüyüş yolları</li>
-        <li>Acarlar Longozu – doğal yaşam alanı</li>
-        <li>Kabak tatlısı ve ıslama köfte</li>
-      </ul>
-
-      <h3>Benim İçin Neden Önemli?</h3>
-      <p>Çünkü bu şehir beni ben yapan duyguların, anıların, insanların doğduğu yer. Sokaklarında çocukluğum, caddelerinde hayallerim var. Uzaktan bakınca sadece şehir ama yakından bakınca hikâyem.</p>
-
-      <!-- <img src="images/sapanca.jpg" alt="Sapanca Gölü" /> -->
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 - Benim Web Sitem</p>
-  </footer>
+  <div class="content">
+    <h2>Bakü Hakkında</h2>
+    <p>
+      Bakü, Azerbaycan'ın başkenti ve en büyük şehridir. Hazar Denizi kıyısında yer alır ve tarihî, kültürel, ekonomik açıdan ülkenin en önemli merkezlerinden biridir.
+    </p>
+    <ul>
+      <li><strong>Nüfus:</strong> Yaklaşık 2.3 milyon</li>
+      <li><strong>Ülke:</strong> Azerbaycan</li>
+      <li><strong>Konum:</strong> Hazar Denizi kıyısında</li>
+      <li><strong>Ünlü Yerler:</strong> Haydar Aliyev Merkezi, Kız Kulesi, İçərişəhər, Şehitler Hiyabanı</li>
+    </ul>
+  </div>
 </body>
 </html>
