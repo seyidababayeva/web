@@ -2,86 +2,81 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Şehrim - Bakü</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/sytle.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    .slider {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      margin: 20px auto;
-      width: 95%;
-    }
-    .slider a {
-      margin: 0 10px;
-      flex: 0 0 auto;
-    }
-    .slider img {
-      height: 200px;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
-    .slider img:hover {
-      transform: scale(1.05);
-    }
-    .content {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-    }
-  </style>
 </head>
 <body>
   <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Seyida Babayeva</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="index.html">Anasayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="hakkimda.html">Hakkımda</a></li>
+          <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+          <li class="nav-item"><a class="nav-link active" href="sehrim.html">Şehrim</a></li>
+          <li class="nav-item"><a class="nav-link" href="takim.html">Takım</a></li>
+          <li class="nav-item"><a class="nav-link" href="ilgi_alanlari.html">İlgi Alanları</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Giriş</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <header>
     <h1>Bakü - Azerbaycan</h1>
   </header>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Anasayfa</a></li>
-        <li><a href="hakkimda.html">Hakkımda</a></li>
-        <li><a href="ozgecmis.html">Özgeçmiş</a></li>
-        <li><a href="sehrim.html">Şehrim</a></li>
-        <li><a href="takim.html">Takım</a></li>
-        <li><a href="ilgi_alanlari.html">İlgi Alanları</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
-        <li><a href="login.html">Giriş</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="sehrim-slider">
+  <a href="#haydar"><img src="img/haydar_aliyev.jpg" alt="Haydar Aliyev Merkezi"></a>
+  <a href="#kizkulesi"><img src="img/kiz_kulesi.jpg" alt="Kız Kulesi"></a>
+  <a href="#oldcity"><img src="img/old_city.jpg" alt="İçərişəhər"></a>
+  <a href="#sehidler"><img src="img/sehidler_xiyabani.jpg" alt="Şehitler Hiyabanı"></a>
+</div>
+ <div class="content">
+  <h2>Bakü Hakkında</h2>
+  <p>
+    Bakü, Azerbaycan'ın başkenti ve en büyük şehridir. Hazar Denizi kıyısında yer alır ve tarihî, kültürel, ekonomik açıdan ülkenin en önemli merkezlerinden biridir.
+  </p>
+  <ul>
+    <li><strong>Nüfus:</strong> Yaklaşık 2.3 milyon</li>
+    <li><strong>Ülke:</strong> Azerbaycan</li>
+    <li><strong>Konum:</strong> Hazar Denizi kıyısında</li>
+    <li><strong>Ünlü Yerler:</strong> Haydar Aliyev Merkezi, Kız Kulesi, İçərişəhər, Şehitler Hiyabanı</li>
+  </ul>
+</div>
 
-  <div class="slider">
-    <a href="haydar.html"><img src="img/haydar_aliyev.jpg" alt="Haydar Aliyev Merkezi"></a>
-    <a href="kizkulesi.html"><img src="img/kiz_kulesi.jpg" alt="Kız Kulesi"></a>
-    <a href="oldcity.html"><img src="img/old_city.jpg" alt="İçərişəhər"></a>
-    <a href="sehidler.html"><img src="img/sehidler_xiyabani.jpg" alt="Şehitler Hiyabanı"></a>
-  </div>
+<div id="haydar" class="sehrim-content">
+  <h2>Haydar Aliyev Merkezi</h2>
+  <p>Haydar Aliyev Merkezi, Azerbaycan’ın başkenti Bakü’de bulunan modern bir kültür ve sanat merkezidir. 2007’de inşasına başlanmış, 2012’de tamamlanmıştır. Merkez, Azerbaycan’ın üçüncü Cumhurbaşkanı Haydar Aliyev’in anısını yaşatmak amacıyla yapılmıştır. Ünlü mimar Zaha Hadid tarafından tasarlanan yapı, akıcı ve kıvrımlı mimarisiyle dikkat çeker. Keskin köşelerden uzak tasarımıyla Sovyet mimarisine bir tepki niteliğindedir. 2014’te “Yılın Tasarımı” ödülünü kazanmıştır. Yaklaşık 57.000 m² alana sahiptir. İçerisinde müzeler, sergi salonları ve konferans alanları bulunur. Azerbaycan’ın kültürünü, tarihini ve modern yüzünü tanıtmayı amaçlar. Hem mimarisi hem işleviyle ülkenin simgesel yapılarındandır.</p>
+</div>
 
-  <div class="content">
-    <h2>Bakü Hakkında</h2>
-    <p>
-      Bakü, Azerbaycan'ın başkenti ve en büyük şehridir. Hazar Denizi kıyısında yer alır ve tarihî, kültürel, ekonomik açıdan ülkenin en önemli merkezlerinden biridir.
-    </p>
-    <ul>
-      <li><strong>Nüfus:</strong> Yaklaşık 2.3 milyon</li>
-      <li><strong>Ülke:</strong> Azerbaycan</li>
-      <li><strong>Konum:</strong> Hazar Denizi kıyısında</li>
-      <li><strong>Ünlü Yerler:</strong> Haydar Aliyev Merkezi, Kız Kulesi, İçərişəhər, Şehitler Hiyabanı</li>
-    </ul>
-  </div>
+<div id="kizkulesi" class="sehrim-content">
+  <h2>Kız Kulesi</h2>
+  <p>Kız Kulesi, Azerbaycan’ın başkenti Bakü’de, tarihi İçəri Şəhər bölgesinde yer alan, şehrin simgesi sayılan ünlü bir kaledir. Yaklaşık 12. yüzyılda inşa edildiği düşünülen bu kule, hem mimari hem de kültürel açıdan büyük öneme sahiptir. Kız Kulesi, UNESCO Dünya Mirası Listesi’nde yer alan İçəri Şəhər’in en dikkat çekici yapılarından biridir. Ortaçağ savunma mimarisinin güzel bir örneği olan kule, efsaneler ve tarihi olaylarla çevrilidir. Şehrin tarihi ve kültürel kimliğinin sembolü olarak kabul edilir. Günümüzde müze olarak kullanılır ve hem yerli halk hem de turistler tarafından sıkça ziyaret edilir. Kız Kulesi, Bakü’nün siluetinde öne çıkan, Azerbaycan tarihinin önemli bir parçasıdır.
+</p>
+</div>
+
+<div id="oldcity" class="sehrim-content">
+  <h2>İçərişəhər (Eski Şehir)</h2>
+  <p>İçəri Şəhər, Azerbaycan’ın başkenti Bakü’nün tarihi ve kültürel kalbidir. “Eski Şehir” anlamına gelen İçəri Şəhər, yaklaşık 2 bin yıllık geçmişiyle Kafkasya’nın en eski yerleşim alanlarından biridir. UNESCO Dünya Mirası Listesi’nde yer alan bu bölge, dar sokakları, eski taş yapıları ve tarihi camileriyle ünlüdür. İçəri Şəhər, Azerbaycan’ın tarih boyunca birçok medeniyete ev sahipliği yaptığını gösterir. Şehrin en önemli yapılarından biri 12. yüzyıldan kalma **Kız Kalesi**dir; bu kale şehrin simgesi olarak kabul edilir. İçəri Şəhər, Osmanlı, Safevî ve Rus dönemlerinin izlerini taşır ve bu nedenle mimari çeşitliliği ile dikkat çeker. Bölgedeki müzeler, saraylar ve hanlar, ziyaretçilere Azerbaycan’ın zengin kültürünü ve tarihini tanıtır. İçəri Şəhər, hem yerli halk hem de turistler için popüler bir çekim merkezidir. Aynı zamanda modern Bakü’nün içinde tarihi dokusunu koruyan nadir yerlerden biridir. Burada sık sık kültürel etkinlikler, festivaller ve el sanatları sergileri düzenlenir. İçəri Şəhər, Azerbaycan’ın kimliğini ve tarihini yaşatan, şehrin ruhunu hissettiren özel bir bölgedir.
+</p>
+</div>
+
+<div id="sehidler" class="sehrim-content">
+  <h2>Şehitler Hiyabanı</h2>
+  <p>Şehidler Xiyabanı, Azerbaycan’ın başkenti Bakü’de bulunan ve ülkenin bağımsızlık mücadelesinde hayatını kaybeden kahramanların anısına yapılmış önemli bir anıt ve mezarlık kompleksidir. 1990’larda, özellikle Sovyetler Birliği’nin dağılma sürecinde ve Ermeni-Azerbaycan çatışmaları sırasında vatanları için can veren şehitlerin anısını yaşatmak amacıyla düzenlenmiştir. Şehidler Xiyabanı, sadece bir mezarlık değil, aynı zamanda Azerbaycan halkının milli direnişinin ve bağımsızlık kararlılığının simgesidir. Burada toprağa verilen kahramanlar için özel anıtlar, kabir taşları ve ziyaret alanları bulunur. Her yıl önemli milli günlerde halk tarafından ziyaret edilir ve saygı gösterilir. Azerbaycan’ın tarihindeki zorlukları ve kahramanlıkları hatırlatan bu alan, ülke için derin bir kültürel ve duygusal öneme sahiptir. Aynı zamanda genç nesillere bağımsızlık mücadelesinin önemini hatırlatan bir eğitim alanı olarak da işlev görür. Bakü’nün merkezi bölgelerinden birinde yer alması, kolay ulaşılabilirliğini sağlar ve şehrin tarihi dokusuyla uyumludur. Şehidler Xiyabanı, Azerbaycan’ın özgürlük ve bağımsızlık yolundaki kararlılığını simgeleyen kutsal bir mekandır.
+</p>
+</div>
+
+
 </body>
 </html>
